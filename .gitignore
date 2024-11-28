@@ -1,0 +1,4 @@
+build
+venv
+example_db/sqlite/files
+*.zip
