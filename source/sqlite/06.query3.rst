@@ -34,7 +34,7 @@
 
 Результат таков:
 
-.. code-block:: sql
+.. code-block:: shell
 
 
     +------------------------------------+-------------+
@@ -82,7 +82,7 @@
 
 В нашей БД имеется только три заказчика, удовлетворяющий этому условию.
 
-.. code-block:: sql
+.. code-block:: shell
 
     +----------------------------+--------+---------+-------------+
     |        customerName        |  city  | country | creditLimit |
@@ -107,7 +107,7 @@
 
 Результат запроса:
 
-.. code-block:: sql
+.. code-block:: shell
 
 
     +----------------------------+-------------+---------+
@@ -138,7 +138,7 @@
 выдаст:
 
 
- .. code-block:: sql
+ .. code-block:: shell
 
 
   +----------------------------+--------+---------+-------------+
@@ -168,7 +168,7 @@
 в Madrid или НЕ имеют creditLimit  0. Результат:
 
 
- .. code-block:: sql
+ .. code-block:: shell
 
 
     +------------------------------------+-------------------+--------------+-------------+
@@ -210,7 +210,7 @@
 
 Результат этого запроса:
 
-.. code-block:: sql
+.. code-block:: shell
 
     +----------------------------+--------+---------+-------------+
     |        customerName        |  city  | country | creditLimit |
@@ -248,7 +248,7 @@
 
 
 
-.. code-block:: sql
+.. code-block:: shell
 
 
     +--------------------------------+----------------+-----------+-------------+
@@ -294,7 +294,7 @@
     WHERE customerName LIKE 'O%';
 
 
-.. code-block:: sql
+.. code-block:: shell
 
 
     +------------------------------+------------+---------+-------------+
@@ -321,14 +321,14 @@ NULL и is NULL
 .. code-block:: sql
 
 
-    SELCT customerName,city,country,creditLimit,postalCode
+    SELECT customerName,city,country,creditLimit,postalCode
     FROM customers
     WHERE postalCode IS NULL;
 
 
 
-.. code-block:: sql
 
+.. code-block:: shell
 
      +-------------------------------+-------------------+-------------+-------------+------------+
      |         customerName          |       city        |   country   | creditLimit | postalCode |

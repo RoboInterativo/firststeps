@@ -22,5 +22,6 @@
    Home <self>
    db
    sqlite/__index
-   mssql
+   mssql/__index
    mysql
+   pythondb/__index
